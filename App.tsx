@@ -1,6 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Dashboard from "./src/screens/DashBboard";
+import Dashboard from "./src/screens/Dashboard";
 import AddColaborador from "./src/screens/AddColaborador";
 
 export type RootStackParamList = {

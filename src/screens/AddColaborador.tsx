@@ -28,6 +28,7 @@ const ESCALAS = [
   "20:00 - 05:00 / DOM - QUI",
   "21:00 - 06:00 / DOM - QUI",
   "22:00 - 07:00 / DOM - QUI",
+  "Supervisor",
 ];
 
 export default function AddColaborador({ navigation }: Props) {

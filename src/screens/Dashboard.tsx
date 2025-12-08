@@ -11,6 +11,8 @@ import {
 import { supabase } from "../lib/supabase";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../../App";
+import { useFocusEffect } from "@react-navigation/native";
+import { useCallback } from "react";
 
 type Colaborador = {
   id: string;
@@ -41,9 +43,11 @@ export default function Dashboard({ navigation }: Props) {
     setLoading(false);
   }
 
-  useEffect(() => {
-    carregar();
-  }, []);
+  useFocusEffect(
+    useCallback(() => {
+      carregar();
+    }, [])
+  );
 
   return (
     <View style={styles.container}>
